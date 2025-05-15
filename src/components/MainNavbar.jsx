@@ -21,9 +21,9 @@ function MainNavbar() {
         <header>
             <nav>
                 <ul>
-                    {links.map((link) => {
+                    {links.map((link, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <NavLink to={link.path}>{link.label}</NavLink>
                             </li>
                         )
