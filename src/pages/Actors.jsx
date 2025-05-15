@@ -1,8 +1,12 @@
 import React from 'react'
+import MainNavbar from '../components/MainNavbar'
 
 function Actors() {
   return (
-    <div>Actors</div>
+    <>
+        <MainNavbar />
+        <div>Actors</div>
+    </>
   )
 }
 
