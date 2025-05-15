@@ -20,13 +20,13 @@ function MainNavbar() {
     <>
         <header>
             <nav>
-                <ul>
+                <ul className="list-unstyled d-flex">
                     {links.map((link, index) => {
                         return (
-                            <li key={index}>
-                                <NavLink to={link.path}>{link.label}</NavLink>
+                            <li key={index} className="mx-2">
+                                <NavLink className="custom-link" to={link.path}>{link.label}</NavLink>
                             </li>
-                        )
+                        );
                     })}
                     {/* <li><NavLink to='/'>Homepage</NavLink></li>
                     <li><NavLink to='/chisiamo'>Chi Siamo</NavLink></li>

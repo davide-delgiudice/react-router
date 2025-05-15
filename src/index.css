@@ -1,0 +1,12 @@
+header{
+  background-color: rgb(195, 1, 1);
+}
+.custom-link{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom-link:hover{
+  font-weight: 700;
+}
