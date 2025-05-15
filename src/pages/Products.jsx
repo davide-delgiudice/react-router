@@ -14,6 +14,10 @@ const Products = () => {
       });
   };
 
+  useEffect(() => {
+    getProduct();
+  }, []);
+
   return (
     <>
         <MainNavbar />
