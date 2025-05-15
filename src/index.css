@@ -1,6 +1,13 @@
 header{
   background-color: rgb(195, 1, 1);
 }
+
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
 .custom-link{
   color: white;
   text-decoration: none;
@@ -13,4 +20,26 @@ header{
 
 .custom-link.active{
   font-weight: 700;
+}
+
+.card img{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+h3{
+  font-size: 15px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+}
+
+.card-body .btn{
+  width: 100%;
+  margin-top: auto;
 }

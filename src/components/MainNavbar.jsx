@@ -20,10 +20,10 @@ function MainNavbar() {
     <>
         <header>
             <nav>
-                <ul className="list-unstyled d-flex">
+                <ul className="list-unstyled d-flex justify-content-center py-3">
                     {links.map((link, index) => {
                         return (
-                            <li key={index} className="mx-2">
+                            <li key={index} className="mx-4">
                                 <NavLink className="custom-link" to={link.path}>{link.label}</NavLink>
                             </li>
                         );

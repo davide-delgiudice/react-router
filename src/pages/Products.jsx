@@ -28,20 +28,21 @@ const Products = () => {
             </div>
             <div className="row">
               {products.map((product) => (
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="card">
-                      <div className="card-image-top">
-                        <img src={product.image} className='img-fluid' alt="" />
+                  <div className="col-12 col-md-6 col-lg-4 gy-2 mb-3" key={product.id}>
+                    <div className="card d-flex align-items-center h-100">
+                      <div className="p-2">
+                        <img src={product.image} alt="" />
                       </div>
                       <div className="card-body">
                         <h3>{product.title}</h3>
                         <p>{product.description}</p>
-                        <p>{product.price}</p>
+                        <p className='fw-bold'>{product.price} €</p>
+                        <div className='btn btn-outline-danger justify-content-bott'>Visualizza Prodotto</div>
                       </div>
                     </div>
                   </div>
                 )
-              )};
+              )}
             </div>
           </div>
         </div>
