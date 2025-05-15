@@ -1,13 +1,13 @@
 import React from 'react'
 import MainNavbar from '../components/MainNavbar'
 
-function Actors() {
+function Products() {
   return (
     <>
         <MainNavbar />
-        <div>Actors</div>
+        <div>Products</div>
     </>
   )
 }
 
-export default Actors
+export default Products

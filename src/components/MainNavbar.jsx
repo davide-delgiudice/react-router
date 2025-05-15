@@ -10,8 +10,8 @@ const links = [
         label: "Chi Siamo",
     },
     {
-        path: "/actors",
-        label: "Actors",
+        path: "/products",
+        label: "Products",
     },
 ];
 
