@@ -10,3 +10,7 @@ header{
 .custom-link:hover{
   font-weight: 700;
 }
+
+.custom-link.active{
+  font-weight: 700;
+}
