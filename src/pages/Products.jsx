@@ -1,8 +1,19 @@
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import MainNavbar from '../components/MainNavbar'
 
-function Products() {
+const Products = () => {
+
+  const [products, setProducts] = useState()
+
+  const getProduct = () => {
+    axios.get('https://fakestoreapi.com/products')
+      .then((resp) =>{
+        setProducts(resp.data);
+      });
+  };
+
   return (
     <>
         <MainNavbar />
@@ -12,7 +23,7 @@ function Products() {
               <h1>La lista dei nostri prodotti</h1>
             </div>
             <div className="col-12 col-md-6 col-lg-4">
-              
+
             </div>
           </div>
         </div>
