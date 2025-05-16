@@ -37,7 +37,7 @@ const Products = () => {
                         <h3>{product.title}</h3>
                         <p>{product.description}</p>
                         <p className='fw-bold'>{product.price} €</p>
-                        <div className='btn btn-outline-danger justify-content-bott'>Visualizza Prodotto</div>
+                        <div className='btn btn-outline-danger'>Visualizza Prodotto</div>
                       </div>
                     </div>
                   </div>
