@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
+
 import axios from 'axios'
 
 const Products = () => {
@@ -34,7 +36,9 @@ const Products = () => {
                       <h3>{product.title}</h3>
                       <p>{product.description}</p>
                       <p className='fw-bold'>{product.price} €</p>
-                      <div className='btn btn-outline-danger'>Visualizza Prodotto</div>
+                      <NavLink to={`/products/${product.id}`}>
+                        <div className='btn btn-outline-danger'>Visualizza Prodotto</div>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
