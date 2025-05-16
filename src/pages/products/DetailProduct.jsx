@@ -17,8 +17,22 @@ const DetailProduct = () => {
     })
   };
 
+  useEffect(() => {
+    getSingleProduct();
+  }, []);
+
   return (
-    <div>DetailProduct</div>
+    <div className='container'>
+        <div className="row">
+          <div className='col-12'>
+            <img src={singleProduct.image} alt="" />
+            <h1>{singleProduct.title}</h1>
+            <p>{singleProduct.category}</p>
+            <p>{singleProduct.description}</p>
+            <p>{singleProduct.price}</p>
+          </div>
+        </div>
+    </div>
   )
 }
 
