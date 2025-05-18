@@ -43,3 +43,9 @@ h3{
   width: 100%;
   margin-top: auto;
 }
+
+.single-img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
